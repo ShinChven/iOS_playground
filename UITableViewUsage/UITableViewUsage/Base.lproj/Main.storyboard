@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="UITableViewUsage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obC-H7-fYp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="barTintColor" red="0.23711567929999999" green="0.83597392270000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textShadowColor" red="0.070588235289999995" green="0.2274509804" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="This is A UItableView" id="87I-Pw-Usk"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EEP-ZR-SwW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mCell" id="GM1-Wx-BVl">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GM1-Wx-BVl" id="QXz-0d-oKZ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a cool UITableViewCell Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcX-9J-W3v">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KcX-9J-W3v" firstAttribute="centerY" secondItem="QXz-0d-oKZ" secondAttribute="centerY" id="Vny-Rd-gG8"/>
+                                                <constraint firstItem="KcX-9J-W3v" firstAttribute="centerX" secondItem="QXz-0d-oKZ" secondAttribute="centerX" id="mys-aj-8GR"/>
+                                                <constraint firstItem="KcX-9J-W3v" firstAttribute="leading" secondItem="QXz-0d-oKZ" secondAttribute="leadingMargin" constant="-7" id="pJY-0i-Mff">
+                                                    <variation key="widthClass=compact" constant="0.0"/>
+                                                </constraint>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="KcX-9J-W3v"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="Vny-Rd-gG8"/>
+                                                    <exclude reference="mys-aj-8GR"/>
+                                                    <exclude reference="pJY-0i-Mff"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="KcX-9J-W3v"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="Vny-Rd-gG8"/>
+                                                    <include reference="mys-aj-8GR"/>
+                                                    <include reference="pJY-0i-Mff"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="vLj-AL-eZU"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="vlF-Dt-QDT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23711567929999999" green="0.83597392270000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="obC-H7-fYp" secondAttribute="trailing" id="3n5-M0-WxD"/>
+                            <constraint firstItem="EEP-ZR-SwW" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="4sN-ZU-GEx"/>
+                            <constraint firstItem="obC-H7-fYp" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Mx5-h0-VuB"/>
+                            <constraint firstItem="EEP-ZR-SwW" firstAttribute="top" secondItem="obC-H7-fYp" secondAttribute="bottom" id="QQh-Ef-cER"/>
+                            <constraint firstItem="EEP-ZR-SwW" firstAttribute="leading" secondItem="obC-H7-fYp" secondAttribute="leading" id="RoP-ap-CH7"/>
+                            <constraint firstItem="EEP-ZR-SwW" firstAttribute="trailing" secondItem="obC-H7-fYp" secondAttribute="trailing" id="gqG-Oq-6My"/>
+                            <constraint firstItem="obC-H7-fYp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="jQ0-yu-x4b"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="obC-H7-fYp"/>
+                                <exclude reference="EEP-ZR-SwW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3n5-M0-WxD"/>
+                                <exclude reference="Mx5-h0-VuB"/>
+                                <exclude reference="jQ0-yu-x4b"/>
+                                <exclude reference="4sN-ZU-GEx"/>
+                                <exclude reference="QQh-Ef-cER"/>
+                                <exclude reference="RoP-ap-CH7"/>
+                                <exclude reference="gqG-Oq-6My"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="obC-H7-fYp"/>
+                                <include reference="EEP-ZR-SwW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3n5-M0-WxD"/>
+                                <include reference="Mx5-h0-VuB"/>
+                                <include reference="jQ0-yu-x4b"/>
+                                <include reference="4sN-ZU-GEx"/>
+                                <include reference="QQh-Ef-cER"/>
+                                <include reference="RoP-ap-CH7"/>
+                                <include reference="gqG-Oq-6My"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mTableView" destination="EEP-ZR-SwW" id="bPN-ay-JHF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="350"/>
+        </scene>
+    </scenes>
+</document>

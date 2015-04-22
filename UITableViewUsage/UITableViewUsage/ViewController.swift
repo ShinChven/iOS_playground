@@ -60,6 +60,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("mCell", forIndexPath: indexPath) as! UITableViewCell
         var mLabel:UILabel = cell.viewWithTag(1) as! UILabel // if you unwrapped nil from here please check out comment above
         mLabel.text = names[indexPath.row]
+        // use ActionKit to bind event
+        var mButton:UIButton = cell.viewWithTag(2) as! UIButton
+        mButton.addControlEvent(UIControlEvents.TouchUpInside, closure: { () -> () in
+            if var text:String = mLabel.text {
+                mLabel.text = "\"\(text)\" is clicked"
+            }else {
+                mLabel.text = "error occured in click event"
+            }
+        })
         return cell
     }
     

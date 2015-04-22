@@ -14,6 +14,9 @@
 		1255584C1AE7E07000AC69C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1255584B1AE7E07000AC69C1 /* Images.xcassets */; };
 		1255584F1AE7E07000AC69C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1255584D1AE7E07000AC69C1 /* LaunchScreen.xib */; };
 		1255585B1AE7E07000AC69C1 /* UITableViewUsageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255585A1AE7E07000AC69C1 /* UITableViewUsageTests.swift */; };
+		1255586A1AE7E85900AC69C1 /* ActionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125558671AE7E85900AC69C1 /* ActionKit.swift */; };
+		1255586B1AE7E85900AC69C1 /* UIControl+ActionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125558681AE7E85900AC69C1 /* UIControl+ActionKit.swift */; };
+		1255586C1AE7E85900AC69C1 /* UIGestureRecognizer+ActionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125558691AE7E85900AC69C1 /* UIGestureRecognizer+ActionKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		125558541AE7E07000AC69C1 /* UITableViewUsageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITableViewUsageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125558591AE7E07000AC69C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1255585A1AE7E07000AC69C1 /* UITableViewUsageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewUsageTests.swift; sourceTree = "<group>"; };
+		125558671AE7E85900AC69C1 /* ActionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionKit.swift; sourceTree = "<group>"; };
+		125558681AE7E85900AC69C1 /* UIControl+ActionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+ActionKit.swift"; sourceTree = "<group>"; };
+		125558691AE7E85900AC69C1 /* UIGestureRecognizer+ActionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+ActionKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +85,9 @@
 		1255583E1AE7E07000AC69C1 /* UITableViewUsage */ = {
 			isa = PBXGroup;
 			children = (
-				125558411AE7E07000AC69C1 /* AppDelegate.swift */,
-				125558461AE7E07000AC69C1 /* ViewController.swift */,
-				125558481AE7E07000AC69C1 /* Main.storyboard */,
+				125558661AE7E85900AC69C1 /* ActionKit */,
+				125558651AE7E77900AC69C1 /* src */,
 				1255584B1AE7E07000AC69C1 /* Images.xcassets */,
-				1255584D1AE7E07000AC69C1 /* LaunchScreen.xib */,
-				125558431AE7E07000AC69C1 /* UITableViewUsage.xcdatamodeld */,
 				1255583F1AE7E07000AC69C1 /* Supporting Files */,
 			);
 			path = UITableViewUsage;
@@ -113,6 +116,28 @@
 				125558591AE7E07000AC69C1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		125558651AE7E77900AC69C1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				125558481AE7E07000AC69C1 /* Main.storyboard */,
+				1255584D1AE7E07000AC69C1 /* LaunchScreen.xib */,
+				125558461AE7E07000AC69C1 /* ViewController.swift */,
+				125558411AE7E07000AC69C1 /* AppDelegate.swift */,
+				125558431AE7E07000AC69C1 /* UITableViewUsage.xcdatamodeld */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		125558661AE7E85900AC69C1 /* ActionKit */ = {
+			isa = PBXGroup;
+			children = (
+				125558671AE7E85900AC69C1 /* ActionKit.swift */,
+				125558681AE7E85900AC69C1 /* UIControl+ActionKit.swift */,
+				125558691AE7E85900AC69C1 /* UIGestureRecognizer+ActionKit.swift */,
+			);
+			path = ActionKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1255586A1AE7E85900AC69C1 /* ActionKit.swift in Sources */,
 				125558471AE7E07000AC69C1 /* ViewController.swift in Sources */,
 				125558421AE7E07000AC69C1 /* AppDelegate.swift in Sources */,
+				1255586B1AE7E85900AC69C1 /* UIControl+ActionKit.swift in Sources */,
+				1255586C1AE7E85900AC69C1 /* UIGestureRecognizer+ActionKit.swift in Sources */,
 				125558451AE7E07000AC69C1 /* UITableViewUsage.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

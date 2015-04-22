@@ -30,6 +30,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EEP-ZR-SwW">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.80784313730000001" green="0.90980392160000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mCell" id="GM1-Wx-BVl">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -43,10 +44,20 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqa-T5-gMc">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <state key="normal" title="click">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Aqa-T5-gMc" firstAttribute="leading" secondItem="KcX-9J-W3v" secondAttribute="trailing" constant="57" id="Fr8-aq-6aO"/>
                                                 <constraint firstItem="KcX-9J-W3v" firstAttribute="centerY" secondItem="QXz-0d-oKZ" secondAttribute="centerY" id="Vny-Rd-gG8"/>
-                                                <constraint firstItem="KcX-9J-W3v" firstAttribute="centerX" secondItem="QXz-0d-oKZ" secondAttribute="centerX" id="mys-aj-8GR"/>
+                                                <constraint firstItem="Aqa-T5-gMc" firstAttribute="baseline" secondItem="KcX-9J-W3v" secondAttribute="baseline" id="dPy-V4-Da7"/>
+                                                <constraint firstItem="KcX-9J-W3v" firstAttribute="centerX" secondItem="QXz-0d-oKZ" secondAttribute="centerX" id="mys-aj-8GR">
+                                                    <variation key="widthClass=compact" constant="-51.5"/>
+                                                </constraint>
                                                 <constraint firstItem="KcX-9J-W3v" firstAttribute="leading" secondItem="QXz-0d-oKZ" secondAttribute="leadingMargin" constant="-7" id="pJY-0i-Mff">
                                                     <variation key="widthClass=compact" constant="0.0"/>
                                                 </constraint>
@@ -54,21 +65,27 @@
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="KcX-9J-W3v"/>
+                                                    <exclude reference="Aqa-T5-gMc"/>
                                                 </mask>
                                                 <mask key="constraints">
                                                     <exclude reference="Vny-Rd-gG8"/>
                                                     <exclude reference="mys-aj-8GR"/>
                                                     <exclude reference="pJY-0i-Mff"/>
+                                                    <exclude reference="Fr8-aq-6aO"/>
+                                                    <exclude reference="dPy-V4-Da7"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
                                                     <include reference="KcX-9J-W3v"/>
+                                                    <include reference="Aqa-T5-gMc"/>
                                                 </mask>
                                                 <mask key="constraints">
                                                     <include reference="Vny-Rd-gG8"/>
                                                     <include reference="mys-aj-8GR"/>
                                                     <include reference="pJY-0i-Mff"/>
+                                                    <include reference="Fr8-aq-6aO"/>
+                                                    <include reference="dPy-V4-Da7"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>

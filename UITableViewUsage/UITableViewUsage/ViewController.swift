@@ -29,6 +29,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func navigateToAnotherStoryboardFile(sender: UIButton) {
+        
+    }
     
     /**
     * this is how to clear extra empty listview items and background color of UITableView

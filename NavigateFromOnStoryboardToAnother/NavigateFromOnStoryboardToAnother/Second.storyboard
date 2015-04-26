@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="reE-ei-KLh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="fhk-uU-eR5">
+            <objects>
+                <viewController storyboardIdentifier="second" id="reE-ei-KLh" customClass="SecondViewController" customModule="NavigateFromOnStoryboardToAnother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Res-ww-EMr"/>
+                        <viewControllerLayoutGuide type="bottom" id="36C-Kb-Gnm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JP0-et-fHB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Storyboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZI-o3-1HL">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9ZI-o3-1HL" firstAttribute="top" secondItem="Res-ww-EMr" secondAttribute="bottom" constant="269" id="4FE-8r-KiI"/>
+                            <constraint firstItem="9ZI-o3-1HL" firstAttribute="centerX" secondItem="JP0-et-fHB" secondAttribute="centerX" id="kyP-i2-yYa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9ZI-o3-1HL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4FE-8r-KiI"/>
+                                <exclude reference="kyP-i2-yYa"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9ZI-o3-1HL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4FE-8r-KiI"/>
+                                <include reference="kyP-i2-yYa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BL7-gX-2DY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="231"/>
+        </scene>
+    </scenes>
+</document>

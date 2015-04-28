@@ -51,6 +51,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // *********** plaese do not do it in didDeselectedRowAtIndexPath, it would return the last cell you selected.
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("\(indexPath.row):\(names[indexPath.row])")
+        
+        //  deselect cell to make android selector effect
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="-944.5" y="363.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="mBU-By-bg6">
             <objects>
                 <viewController id="Ain-4u-n6D" customClass="ViewController" customModule="NavigationBarDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -85,7 +85,9 @@
                             <constraint firstItem="NUx-uZ-vus" firstAttribute="centerX" secondItem="eJe-7N-ZIb" secondAttribute="centerX" id="cey-eu-CH7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wFG-ip-ROO"/>
+                    <navigationItem key="navigationItem" title="Title" id="UKx-ey-92I">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="AOa-xN-HYa"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EI3-ZI-fdH" userLabel="First Responder" sceneMemberID="firstResponder"/>

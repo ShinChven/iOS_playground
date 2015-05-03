@@ -19,8 +19,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // edit your navigationbar style here
+        
+        // UINavigationBar background color
         UINavigationBar.appearance().barTintColor = UIColor.grayColor()
+        
+        // title color
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        
+        // UINavigation right item text color
+        UINavigationBar.appearance().tintColor = UIColor.yellowColor()
+        // UINavigationBar Background Image
+        // let navImage:UIImage = UIImage(named: "bar_background.jpg")!
+        // UINavigationBar.appearance().setBackgroundImage(navImage, forBarMetrics: .Default)
+        
+        // left back button color
+        UINavigationBar.appearance().tintColor = UIColor.greenColor()
         
         
         return true

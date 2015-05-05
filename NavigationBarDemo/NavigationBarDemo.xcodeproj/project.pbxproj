@@ -16,6 +16,8 @@
 		122AA8AA1AF61DE100EF180A /* NavigationBarDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122AA8A91AF61DE100EF180A /* NavigationBarDemoTests.swift */; };
 		122AA8B41AF6216900EF180A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122AA8B31AF6216900EF180A /* SecondViewController.swift */; };
 		122AA8B61AF6224500EF180A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122AA8B51AF6224500EF180A /* ThirdViewController.swift */; };
+		126564461AF915BD00285347 /* PushedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126564451AF915BD00285347 /* PushedViewController.swift */; };
+		126564481AF9163100285347 /* MyRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126564471AF9163100285347 /* MyRootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		122AA8A91AF61DE100EF180A /* NavigationBarDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarDemoTests.swift; sourceTree = "<group>"; };
 		122AA8B31AF6216900EF180A /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		122AA8B51AF6224500EF180A /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		126564451AF915BD00285347 /* PushedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushedViewController.swift; sourceTree = "<group>"; };
+		126564471AF9163100285347 /* MyRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				122AA88E1AF61DE000EF180A /* Supporting Files */,
 				122AA8B31AF6216900EF180A /* SecondViewController.swift */,
 				122AA8B51AF6224500EF180A /* ThirdViewController.swift */,
+				126564451AF915BD00285347 /* PushedViewController.swift */,
+				126564471AF9163100285347 /* MyRootViewController.swift */,
 			);
 			path = NavigationBarDemo;
 			sourceTree = "<group>";
@@ -224,8 +230,10 @@
 				122AA8B41AF6216900EF180A /* SecondViewController.swift in Sources */,
 				122AA8961AF61DE100EF180A /* ViewController.swift in Sources */,
 				122AA8B61AF6224500EF180A /* ThirdViewController.swift in Sources */,
+				126564461AF915BD00285347 /* PushedViewController.swift in Sources */,
 				122AA8941AF61DE100EF180A /* NavigationBarDemo.xcdatamodeld in Sources */,
 				122AA8911AF61DE000EF180A /* AppDelegate.swift in Sources */,
+				126564481AF9163100285347 /* MyRootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +429,7 @@
 				122AA8AF1AF61DE100EF180A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		122AA8B01AF61DE100EF180A /* Build configuration list for PBXNativeTarget "NavigationBarDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +438,7 @@
 				122AA8B21AF61DE100EF180A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

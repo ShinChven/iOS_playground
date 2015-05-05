@@ -31,5 +31,8 @@ class ViewController: UIViewController {
         })
     }
 
+    @IBAction func pushWithCode(sender: UIButton) {
+        
+    }
 }
 

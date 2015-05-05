@@ -21,6 +21,37 @@
             </objects>
             <point key="canvasLocation" x="-436.5" y="363.5"/>
         </scene>
+        <!--Pushed View Controller-->
+        <scene sceneID="hD9-SD-vb9">
+            <objects>
+                <viewController storyboardIdentifier="pushed" id="WfO-4N-Vmx" customClass="PushedViewController" customModule="NavigationBarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DAc-EU-Swz"/>
+                        <viewControllerLayoutGuide type="bottom" id="4G9-gD-asS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F2T-SG-BX0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pushed with code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPC-hu-4gC">
+                                <rect key="frame" x="119" y="177" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nPC-hu-4gC" firstAttribute="top" secondItem="DAc-EU-Swz" secondAttribute="bottom" constant="157" id="Eh0-1t-CdZ"/>
+                            <constraint firstItem="nPC-hu-4gC" firstAttribute="centerX" secondItem="F2T-SG-BX0" secondAttribute="centerX" id="WrW-cW-rdf"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amc-0V-vbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="1252"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="9oM-VS-9xT">
             <objects>
@@ -45,7 +76,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="this is a none-navigationbar view" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tda-Wk-Tw7">
                                 <rect key="frame" x="61" y="312" width="252" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -60,7 +91,7 @@
         <!--Title-->
         <scene sceneID="mBU-By-bg6">
             <objects>
-                <viewController id="Ain-4u-n6D" customClass="ViewController" customModule="NavigationBarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ain-4u-n6D" customClass="MyRootViewController" customModule="NavigationBarDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I4r-xa-pm8"/>
                         <viewControllerLayoutGuide type="bottom" id="Neb-Ib-fka"/>
@@ -78,11 +109,22 @@
                                     <segue destination="UPR-KQ-z2i" kind="show" id="5pd-J4-zts"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEp-Uw-fUV">
+                                <rect key="frame" x="135" y="509" width="105" height="30"/>
+                                <state key="normal" title="push with code">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushNavigationViewControllerWithCode:" destination="Ain-4u-n6D" eventType="touchUpInside" id="tdR-l3-3fG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NUx-uZ-vus" firstAttribute="top" secondItem="I4r-xa-pm8" secondAttribute="bottom" constant="255" id="Nc5-NC-QKJ"/>
                             <constraint firstItem="NUx-uZ-vus" firstAttribute="centerX" secondItem="eJe-7N-ZIb" secondAttribute="centerX" id="cey-eu-CH7"/>
+                            <constraint firstItem="IEp-Uw-fUV" firstAttribute="leading" secondItem="NUx-uZ-vus" secondAttribute="leading" id="qvu-fy-S0r"/>
+                            <constraint firstItem="Neb-Ib-fka" firstAttribute="top" secondItem="IEp-Uw-fUV" secondAttribute="bottom" constant="128" id="t47-bL-iM7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="UKx-ey-92I">

@@ -1,5 +1,5 @@
 //
-//  MyRootViewController.swift
+//  OtherViewController.swift
 //  NavigationBarDemo
 //
 //  Created by ShinChven Zhang on 15/5/5.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyRootViewController: UIViewController {
+class OtherViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,20 +21,13 @@ class MyRootViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func pushNavigationViewControllerWithCode(sender: UIButton) {
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
-        // push a viewcontroller with navigationcontroller that is not linked in storyboard.
-        var sb:UIStoryboard = UIStoryboard(name:"second",bundle: NSBundle(forClass: self.dynamicType))
-        // use storyboard id "second" to find SecondViewController in Second.storyboard
-        var pushedViewController = sb.instantiateViewControllerWithIdentifier("other") as! OtherViewController;
-        // present view controller
-        self.navigationController?.pushViewController(pushedViewController, animated: true)
-        
-        
+        self.navigationItem.title = "viewc in other storyboard"
         
     }
-
+    
 
     /*
     // MARK: - Navigation

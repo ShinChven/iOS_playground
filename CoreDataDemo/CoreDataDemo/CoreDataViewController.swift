@@ -59,8 +59,16 @@ class CoreDataViewController: UIViewController, UITableViewDataSource, UITableVi
     func loadTableData(){
         // TODO: 查询
         
-        var f = NSFetchRequest(entityName: "User")
-        dataArr = context.executeFetchRequest(f, error: nil)!
+        var request = NSFetchRequest(entityName: "User")
+
+        var p1 = NSPredicate(format: "userName !=%@", "he2llo")
+        var p2 = NSPredicate(format: "userAge =%@", "28")
+        
+        var compound = NSCompoundPredicate.andPredicateWithSubpredicates([p1, p2])
+        
+        request.predicate = compound
+        
+        dataArr = context.executeFetchRequest(request, error: nil)!
         
         userTable.reloadData()
 

@@ -87,5 +87,58 @@
             </objects>
             <point key="canvasLocation" x="286.5" y="348.5"/>
         </scene>
+        <!--User View Controller-->
+        <scene sceneID="oWE-fM-KH9">
+            <objects>
+                <viewController storyboardIdentifier="UserContent" id="cbS-4c-LW1" customClass="UserViewController" customModule="CoreDataDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ec-Rv-hJu"/>
+                        <viewControllerLayoutGuide type="bottom" id="ndP-d1-nOE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Oi-xZ-gdE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CtL-hv-QQn">
+                                <rect key="frame" x="33" y="64" width="218" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tzR-Sb-7Iw">
+                                <rect key="frame" x="33" y="131" width="218" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hU-Vd-18r">
+                                <rect key="frame" x="33" y="203" width="218" height="30"/>
+                                <state key="normal" title="update">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateUser:" destination="cbS-4c-LW1" eventType="touchUpInside" id="D6j-oB-mPY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yu-Bq-4kH">
+                                <rect key="frame" x="33" y="262" width="218" height="30"/>
+                                <state key="normal" title="delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteUser:" destination="cbS-4c-LW1" eventType="touchUpInside" id="0UR-JA-CZJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="userAgeInput" destination="tzR-Sb-7Iw" id="NB2-xS-Fg7"/>
+                        <outlet property="userNameInput" destination="CtL-hv-QQn" id="ASk-Q1-g7U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXD-Ve-xQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724.5" y="348.5"/>
+        </scene>
     </scenes>
 </document>

@@ -15,6 +15,7 @@
 		128A41B31B89AFBD003956FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 128A41B11B89AFBD003956FE /* LaunchScreen.xib */; };
 		128A41BF1B89AFBD003956FE /* CoreDataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A41BE1B89AFBD003956FE /* CoreDataDemoTests.swift */; };
 		128A41C91B89B955003956FE /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A41C81B89B955003956FE /* CoreDataViewController.swift */; };
+		128A41CB1B89C38C003956FE /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A41CA1B89C38C003956FE /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		128A41BD1B89AFBD003956FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		128A41BE1B89AFBD003956FE /* CoreDataDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoTests.swift; sourceTree = "<group>"; };
 		128A41C81B89B955003956FE /* CoreDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
+		128A41CA1B89C38C003956FE /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				128A41A71B89AFBD003956FE /* CoreDataDemo.xcdatamodeld */,
 				128A41A31B89AFBD003956FE /* Supporting Files */,
 				128A41C81B89B955003956FE /* CoreDataViewController.swift */,
+				128A41CA1B89C38C003956FE /* UserViewController.swift */,
 			);
 			path = CoreDataDemo;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				128A41AB1B89AFBD003956FE /* ViewController.swift in Sources */,
+				128A41CB1B89C38C003956FE /* UserViewController.swift in Sources */,
 				128A41C91B89B955003956FE /* CoreDataViewController.swift in Sources */,
 				128A41A61B89AFBD003956FE /* AppDelegate.swift in Sources */,
 				128A41A91B89AFBD003956FE /* CoreDataDemo.xcdatamodeld in Sources */,

@@ -15,9 +15,15 @@ class CoreDataViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         self.context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext!
         
-        loadTableData()
+
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        loadTableData()
+        
     }
     
     var dataArr:Array<AnyObject> = []
@@ -30,6 +36,9 @@ class CoreDataViewController: UIViewController, UITableViewDataSource, UITableVi
     
 
     @IBAction func addUser(sender: UIButton) {
+        
+        // TODO: 添加
+        
         if userNameInput.text == "" {
             return
         }else{
@@ -48,6 +57,8 @@ class CoreDataViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func loadTableData(){
+        // TODO: 查询
+        
         var f = NSFetchRequest(entityName: "User")
         dataArr = context.executeFetchRequest(f, error: nil)!
         
@@ -76,6 +87,13 @@ class CoreDataViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        var user = dataArr[indexPath.row] as! NSManagedObject
+        
+        var vc = storyboard?.instantiateViewControllerWithIdentifier("UserContent") as! UserViewController
+        vc.userObject = user
+        presentViewController(vc, animated: true, completion: nil)
         
     }
     

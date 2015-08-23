@@ -31,6 +31,9 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="8" y="8" width="304" height="61"/>
+                                                    </variation>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQq-Ai-ZNc" userLabel="input">
                                                     <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -74,6 +77,9 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="178" y="81" width="42" height="41"/>
+                                                    </variation>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfV-cv-pnD" userLabel="calculate">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -88,7 +94,8 @@
                                                             <exclude reference="NTY-WV-AiG"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact">
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="230" y="77" width="80" height="30"/>
                                                         <mask key="constraints">
                                                             <include reference="NTY-WV-AiG"/>
                                                         </mask>
@@ -118,15 +125,15 @@
                                                     <exclude reference="mfV-cv-pnD"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="7GH-rT-Mcu"/>
+                                                    <exclude reference="PXx-pF-5wm"/>
                                                     <exclude reference="61F-uk-c5v"/>
                                                     <exclude reference="QOp-c9-UkG"/>
                                                     <exclude reference="VB9-Ke-CVD"/>
-                                                    <exclude reference="hv1-9z-uVs"/>
-                                                    <exclude reference="rTE-Vt-Byb"/>
                                                     <exclude reference="D4x-HK-i6x"/>
                                                     <exclude reference="luf-JA-QxA"/>
-                                                    <exclude reference="7GH-rT-Mcu"/>
-                                                    <exclude reference="PXx-pF-5wm"/>
+                                                    <exclude reference="hv1-9z-uVs"/>
+                                                    <exclude reference="rTE-Vt-Byb"/>
                                                     <exclude reference="XeB-Tx-ocr"/>
                                                     <exclude reference="cBl-dW-jEe"/>
                                                     <exclude reference="kil-zE-zop"/>
@@ -141,15 +148,15 @@
                                                     <include reference="mfV-cv-pnD"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="7GH-rT-Mcu"/>
+                                                    <include reference="PXx-pF-5wm"/>
                                                     <include reference="61F-uk-c5v"/>
                                                     <include reference="QOp-c9-UkG"/>
                                                     <include reference="VB9-Ke-CVD"/>
-                                                    <include reference="hv1-9z-uVs"/>
-                                                    <include reference="rTE-Vt-Byb"/>
                                                     <include reference="D4x-HK-i6x"/>
                                                     <include reference="luf-JA-QxA"/>
-                                                    <include reference="7GH-rT-Mcu"/>
-                                                    <include reference="PXx-pF-5wm"/>
+                                                    <include reference="hv1-9z-uVs"/>
+                                                    <include reference="rTE-Vt-Byb"/>
                                                     <include reference="XeB-Tx-ocr"/>
                                                     <include reference="cBl-dW-jEe"/>
                                                     <include reference="kil-zE-zop"/>
@@ -176,10 +183,10 @@
                                 <exclude reference="sxm-pW-M2l"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="MkD-jF-9io"/>
                                 <exclude reference="Dke-yY-aOp"/>
                                 <exclude reference="Jn8-qM-qFS"/>
                                 <exclude reference="KN2-55-fX9"/>
-                                <exclude reference="MkD-jF-9io"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -187,10 +194,10 @@
                                 <include reference="sxm-pW-M2l"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="MkD-jF-9io"/>
                                 <include reference="Dke-yY-aOp"/>
                                 <include reference="Jn8-qM-qFS"/>
                                 <include reference="KN2-55-fX9"/>
-                                <include reference="MkD-jF-9io"/>
                             </mask>
                         </variation>
                     </view>

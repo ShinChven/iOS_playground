@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         names.append("neo")
         names.append("is")
         names.append("the")
+        @IBAction func alertIt(sender: UIButton) {
+        }
         names.append("one")
         self.clearLines()
         

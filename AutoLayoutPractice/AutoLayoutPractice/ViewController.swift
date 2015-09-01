@@ -16,6 +16,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     }
 
     override func didReceiveMemoryWarning() {
+        @IBAction func alertIt(sender: UIButton) {
+        }
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

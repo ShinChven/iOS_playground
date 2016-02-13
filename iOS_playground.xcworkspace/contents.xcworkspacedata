@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AutoCellHeight/AutoCellHeight.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MultiCell/MultiCell.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIAlertViewDemo/UIAlertViewDemo.xcodeproj">
    </FileRef>
    <FileRef
